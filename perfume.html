@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parfum</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-container {
+  display: flex;
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  padding: 20px;
+  gap: 30px;
+}
+
+.image-container img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #7C7C7C;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.product-details h2 {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.product-details p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.current-price {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 35px;
+  color: #2E8B57;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.original-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #A9A9A9;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: #2E8B57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  font-size: 16px
+}
+
+.add-to-cart:hover {
+  background-color: #256A43;
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+    <div class="image-container">
+      <img src="./images 1/image-product-desktop.jpg" alt="Gabrielle Essence Perfume">
+    </div>
+    <div class="product-details">
+      <h5>PERFUME</h5>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price">
+        <span class="current-price">$149.99</span>
+        <span class="original-price">$169.99</span>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+      
+    </div>
+  </div>
+</body>
+</html>
